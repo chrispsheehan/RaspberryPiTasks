@@ -17,7 +17,7 @@ crontab -e
 ```
 - Cron job entry
 ```
-@reboot python /home/pi/RaspberryPiTasks/OnStartup.py
+@reboot sleep 60 && python /home/pi/RaspberryPiTasks/OnStartup.py
 ```
 
 ## Update
