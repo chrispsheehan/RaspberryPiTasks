@@ -11,6 +11,16 @@ sudo apt install nodejs
 ```
 git clone https://github.com/chrispsheehan/RaspberryPiTasks.git
 ```
+- Set cron job
+```
+crontab -e
+```
+- Cron job entry
+```
+@reboot python /home/pi/RaspberryPiTasks/OnStartup.py
+```
+
+## Update
 - Update startup script
 ```
 cd RaspberryPiTasks/
