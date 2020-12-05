@@ -8,6 +8,6 @@ print("Hello (pi) World!")
 
 print(dt_string)
 
-file = open("test.txt", "w") 
+file = open("./test.txt", "w") 
 file.write("This file was created to make sure the boot task is working today\n" + dt_string) 
 file.close()
