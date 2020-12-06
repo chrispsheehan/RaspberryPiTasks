@@ -15,6 +15,10 @@ git clone https://github.com/chrispsheehan/RaspberryPiTasks.git
 ```
 crontab /RasberryPiTasks/src/cronjobs.txt
 ```
+- Install pip crontab
+```
+pip install crontab
+```
 
 ## Update
 - Update startup script
