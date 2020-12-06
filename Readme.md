@@ -27,6 +27,13 @@ cd RaspberryPiTasks/
 git pull
 ```
 
+## Docker environment
+- Creates a local environment to poke around in
+```
+docker build -t rasp-box .
+docker run -it rasp-box
+```
+
 ### References
 - https://linuxize.com/post/how-to-install-node-js-on-raspberry-pi/
 - https://www.youtube.com/watch?v=zRXauWUumSI
