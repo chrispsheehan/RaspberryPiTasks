@@ -4,7 +4,7 @@ A simple script to run on startup on a raspberry pi.
 ## Setup
 ```
 git clone https://github.com/chrispsheehan/RaspberryPiTasks.git
-sudo sh /RaspberryPiTasksInit.sh
+sudo sh /RaspberryPiTasks/Init.sh
 ```
 
 ## Docker environment
