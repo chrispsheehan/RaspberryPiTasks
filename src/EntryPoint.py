@@ -2,6 +2,7 @@ import sys
 
 import TestFile
 import Setup
+import CronTab
 
 if len(sys.argv) == 2:
 
@@ -9,7 +10,11 @@ if len(sys.argv) == 2:
 
     if firstArg == '-init':
 
-        Setup.pipInstall(['pip', 'crontab'])
+        Setup.installNode()
+
+        Setup.installPip()
+
+        Setup.pipInstall(['crontab'])  
 
     elif firstArg == '-test':
 
@@ -22,7 +27,7 @@ else:
     if len(sys.argv) <= 1:
 
         raise Exception("You need an arg, yer teapot!")
-    
+
     else:
 
         raise Exception("Too many args, yer teapot!")    
