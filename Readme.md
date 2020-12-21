@@ -3,7 +3,6 @@ A simple script to run on startup on a raspberry pi.
 
 ## Setup
 ```
-git clone https://github.com/chrispsheehan/RaspberryPiTasks.git
 sudo sh ./Init.sh
 sudo python ./RaspberryPiTasks/src/EntryPoint.py '-init'
 ```
