@@ -8,6 +8,8 @@ if len(sys.argv) == 2:
 
         Setup.pipInstall('pip')
 
+        Setup.pipInstall('crontab')
+
         TestFile.writeOut()
         
     else:
