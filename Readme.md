@@ -3,14 +3,7 @@ A simple script to run on startup on a raspberry pi.
 
 ## Setup
 ```
-sudo sh ./Init.sh
-sudo python ./RaspberryPiTasks/src/EntryPoint.py '-init'
-```
-
-## Update
-```
-cd RaspberryPiTasks/
-git pull
+sudo sh ./RaspberryPiTasksInit.sh
 ```
 
 ## Docker environment

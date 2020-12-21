@@ -6,3 +6,4 @@ python get-pip.py
 cd RaspberryPiTasks
 git pull
 cd ..
+python ./RaspberryPiTasks/src/EntryPoint.py '-init'
