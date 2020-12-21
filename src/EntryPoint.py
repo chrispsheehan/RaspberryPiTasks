@@ -11,7 +11,7 @@ if len(sys.argv) == 2:
 
         Setup.pipInstall(['crontab', 'requests'])
 
-        Setup.installNode()        
+        #Setup.installNode()        
 
     elif firstArg == '-test':
 
