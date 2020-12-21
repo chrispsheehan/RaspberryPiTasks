@@ -1,10 +1,14 @@
 import sys
 
 import TestFile
+import Setup
 
 if len(sys.argv) == 2:
     if sys.argv[1] == '-init':
+
+        Setup.install('pip')
         TestFile.writeOut()
+        
     else:
         raise Exception("This logic path is not a thing. I'm a teapot.")
 
