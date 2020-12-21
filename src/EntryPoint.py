@@ -9,9 +9,7 @@ if len(sys.argv) == 2:
 
     if firstArg == '-init':
 
-        Setup.pipInstall(['crontab', 'requests'])
-
-        #Setup.installNode()        
+        Setup.pipInstall(['crontab', 'requests'])        
 
     elif firstArg == '-test':
 
