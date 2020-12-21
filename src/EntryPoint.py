@@ -2,7 +2,6 @@ import sys
 
 import TestFile
 import Setup
-import CronTab
 
 if len(sys.argv) == 2:
 
