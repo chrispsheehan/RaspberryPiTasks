@@ -1,4 +1,5 @@
 import sys
+import os
 
 import TestFile
 import Setup
@@ -13,7 +14,7 @@ if len(sys.argv) == 2:
 
         from crontab import CronTab
         
-        my_cron = CronTab(user='root')
+        my_cron = CronTab(user=os.environ.get('USER'))
         job = my_cron.new(command='python /RaspberryPiTasks/src/EntryPoint.py -test')
         job.every_reboot()
             

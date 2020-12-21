@@ -1,5 +1,7 @@
 FROM balenalib/raspberry-pi
 
+COPY / /RaspberryPiTasks
+
 RUN apt-get update
 RUN apt-get -y install cron
 RUN apt-get -y install python
