@@ -9,8 +9,6 @@ if len(sys.argv) == 2:
 
     if firstArg == '-init':
 
-        Setup.installPip()
-
         Setup.pipInstall(['crontab', 'requests'])
 
         Setup.installNode()        
