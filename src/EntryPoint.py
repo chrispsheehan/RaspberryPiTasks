@@ -6,7 +6,8 @@ import Setup
 if len(sys.argv) == 2:
     if sys.argv[1] == '-init':
 
-        Setup.install('pip')
+        Setup.pipInstall('pip')
+
         TestFile.writeOut()
         
     else:
