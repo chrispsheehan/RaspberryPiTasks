@@ -14,7 +14,7 @@ if len(sys.argv) == 2:
         from crontab import CronTab
         
         my_cron = CronTab(user='root')
-        job = my_cron.new(command='python /RaspberryPiTasks/src/EntryPoint.py -init')
+        job = my_cron.new(command='python /RaspberryPiTasks/src/EntryPoint.py -test')
         job.every_reboot()
             
         my_cron.write()               
