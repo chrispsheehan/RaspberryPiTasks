@@ -1,4 +1,5 @@
 import sys
+from crontab import CronTab
 
 import TestFile
 import Setup
@@ -9,7 +10,13 @@ if len(sys.argv) == 2:
 
     if firstArg == '-init':
 
-        Setup.pipInstall(['crontab', 'requests'])        
+        Setup.pipInstall(['crontab', 'requests'])
+
+        my_cron = CronTab(user='root')
+        job = my_cron.new(command='python /RaspberryPiTasks/src/EntryPoint.py -init')
+        job.every_reboot()
+        
+        my_cron.write()                
 
     elif firstArg == '-test':
 

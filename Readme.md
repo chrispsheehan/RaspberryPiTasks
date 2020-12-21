@@ -3,7 +3,7 @@ A simple script to run on startup on a raspberry pi.
 
 ## Setup
 ```
-sudo sh ./RaspberryPiTasksInit.sh
+sudo sh /RaspberryPiTasksInit.sh
 ```
 
 ## Docker environment
