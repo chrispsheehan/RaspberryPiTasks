@@ -1,6 +1,7 @@
 from datetime import datetime
 
-def dateStamp() :
+
+def dateStamp():
     now = datetime.now()
 
     dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
