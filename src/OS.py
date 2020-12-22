@@ -7,5 +7,5 @@ def writeOutFile(dt_string):
     targetOutFile = os.path.join(curentDir, "test.txt")
 
     file = open(targetOutFile, "w")
-    file.write("Boot job working :)\n" + dt_string)
+    file.write("Boot job working :) - what a time to be alive\n" + dt_string)
     file.close()
