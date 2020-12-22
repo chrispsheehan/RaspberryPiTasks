@@ -1,5 +1,5 @@
-# run setup and pull changes
-@reboot sleep 60 && sh ./RaspberryPiTasks/OnReboot.sh &
+# run setup/update and pull changes every hour
+0 * * * * sh ./RaspberryPiTasks/Setup.sh &
 
 # run test every minute
 * * * * * python ./RaspberryPiTasks/src/EntryPoint.py -test &
