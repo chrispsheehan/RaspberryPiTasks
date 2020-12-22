@@ -11,5 +11,4 @@ cd ..
 
 python ./RaspberryPiTasks/src/EntryPoint.py -init
 
-crontab -r
 crontab ./RaspberryPiTasks/cronjobs.txt
