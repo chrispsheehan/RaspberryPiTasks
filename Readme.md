@@ -5,6 +5,7 @@ A simple script to run on startup on a raspberry pi.
 ```
 git clone https://github.com/chrispsheehan/RaspberryPiTasks.git
 sudo sh ./RaspberryPiTasks/Install.sh
+crontab ./RaspberryPiTasks/cronjobs.txt
 ```
 
 ## Test
