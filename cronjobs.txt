@@ -1,5 +1,5 @@
 # run setup/update and pull changes every hour
-0 * * * * sh ./RaspberryPiTasks/Setup.sh &
+* * * * * sh ./RaspberryPiTasks/Update.sh &
 
 # run test every minute
 * * * * * python ./RaspberryPiTasks/src/EntryPoint.py -test &
