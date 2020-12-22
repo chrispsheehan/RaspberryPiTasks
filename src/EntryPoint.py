@@ -9,10 +9,10 @@ if len(sys.argv) == 2:
 
     if firstArg == '-init':
 
-        Setup.pipInstall(['python-crontab'])          
+        Setup.pipInstall(['python-crontab'])
     elif firstArg == '-test':
 
-        TestFile.writeOut()     
+        TestFile.writeOut()
     else:
         raise Exception("This logic path is not a thing. I'm a teapot.")
 
@@ -23,4 +23,4 @@ else:
 
     else:
 
-        raise Exception("Too many args, yer teapot!")    
+        raise Exception("Too many args, yer teapot!")

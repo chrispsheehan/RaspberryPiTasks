@@ -1,0 +1,4 @@
+
+@reboot sleep 60 && sh ./RaspberryPiTasks/OnReboot.sh
+
+* * * * * python ./RaspberryPiTasks/src/EntryPoint.py '-test'

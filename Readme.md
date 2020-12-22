@@ -4,7 +4,13 @@ A simple script to run on startup on a raspberry pi.
 ## Setup
 ```
 git clone https://github.com/chrispsheehan/RaspberryPiTasks.git
-sudo sh ./RaspberryPiTasks/Init.sh
+sudo sh ./RaspberryPiTasks/OnReboot.sh
+```
+
+## Test
+Reboot the Pi. You should see the below file.
+```
+./RaspberryPiTasks/src/test.txt
 ```
 
 ## Docker environment

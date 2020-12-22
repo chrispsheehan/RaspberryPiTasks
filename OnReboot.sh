@@ -1,5 +1,3 @@
-crontab -r
-
 curl -sL https://nodejs.org/dist/v8.11.3/node-v8.11.3-linux-armv6l.tar.xz | bash
 apt install nodejs
 
@@ -12,4 +10,6 @@ git pull
 cd ..
 
 python ./RaspberryPiTasks/src/EntryPoint.py '-init'
-crontab ./RaspberryPiTasks/reboot.cron.txt
+
+crontab -r
+crontab ./RaspberryPiTasks/cronjobs.txt
